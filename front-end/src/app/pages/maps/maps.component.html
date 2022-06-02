@@ -1,0 +1,41 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body">
+      <!-- Card stats -->
+      
+<!-- Page content -->
+<form role="form" (ngSubmit)="onSubmit()" #addUserForm="ngForm" >
+<div class="pl-lg-4">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label  class="form-control-label" for="input-username">Kullanıcı Adı</label>
+        <input [(ngModel)]="userName" type="text" id="input-username" class="form-control form-control-alternative"  >
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label  class="form-control-label" for="input-name">Ad Soyad</label>
+        <input [(ngModel)]="name" type="text" id="input-name" class="form-control form-control-alternative" >
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label  class="form-control-label" for="input-password">Şifre</label>
+        <input [(ngModel)]="password" type="password" id="input-password" class="form-control form-control-alternative"  >
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label  class="form-control-label" for="input-role">Rol</label>
+        <input [(ngModel)]="role" type="text" id="input-role" class="form-control form-control-alternative"  >
+      </div>
+      <div class="container-3">
+        <button type="submit" class="btn btn-primary my-4" >Kullanıcı Ekle</button>
+      </div>
+    </div>
+  </div>
+</div>
+</form>
